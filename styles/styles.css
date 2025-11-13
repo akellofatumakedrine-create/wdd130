@@ -1,0 +1,41 @@
+:root {
+  /* Colors */
+  --primary-color: #004aad;
+  --secondary-color: #ffb703;
+  --text-color: #333333;
+  --background-color: #ffffff;
+
+  /* Fonts */
+  --main-font: 'Open Sans', sans-serif;
+  --heading-font: 'Roboto Slab', serif;
+
+  /* Sizes */
+  --max-width: 1200px;
+  --border-radius: 10px;
+}
+body {
+  font-family: var(--main-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: var(--max-width);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-radius: var(--border-radius);
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+}
