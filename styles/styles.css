@@ -39,3 +39,8 @@ button {
   background-color: var(--secondary-color);
   border-radius: var(--border-radius);
 }
+.logo-container {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+  }
