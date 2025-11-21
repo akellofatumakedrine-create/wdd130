@@ -89,72 +89,51 @@ nav, p, section, article {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Header Styles - Updated with Grid */
-header{
+/* HEADER GRID LAYOUT */
+header {
   display: grid;
-  grid-template-columns: auto 1fr; /* Logo takes auto width, nav takes remaining space */
+  grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 16px;
-  background-color: var(--accent2-color);
-  gap: 20px; /* Space between logo and nav */
+  padding: 1rem 2rem;
+  background-color: #f0f8ff;
+  border-bottom: 3px solid #0a4d78;
 }
 
-.logo {
-  height: 60px;
+header img {
+  width: 120px;
 }
 
-/* Nav Styles - Updated with Flex */
-nav {
+/* NAV FLEX LAYOUT */
+nav ul {
   display: flex;
-  justify-content: flex-end; /* Align nav items to the right */
-  gap: 12px; /* Space between nav links */
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
 }
 
 nav a {
-  color: var(--accent1-color);
   text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px; /* Add padding for better click area */
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  color: #0a4d78;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
-  color: var(--secondary-color);
-  background-color: rgba(0, 0, 0, 0.05); /* Subtle background on hover */
+  color: #0671b7;
+  border-bottom: 2px solid #0671b7;
 }
 
-/* Footer Styles - Updated for Social Media Alignment */
 footer {
-  background-color: var(--primary-color);
-  color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #0a4d78;
+  color: white;
+  margin-top: 3rem;
 }
 
-.footer-content {
-  margin-bottom: 16px;
-}
-
-.socialmedia {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.socialmedia img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
-
-.socialmedia img:hover {
-  transform: scale(1.1);
+footer .social img {
+  width: 32px;
+  margin: 0 .5rem;
 }
 
 /* Section Styles */
@@ -165,45 +144,48 @@ footer {
   padding: 24px;
 }
 
-/* Adventures Section - Updated with Grid Layout */
-.adventures {
-  background-color: var(--secondary-color);
-  border-radius: 8px;
-  margin: 32px 0;
-  padding: 24px;
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.adventure-gallery figure {
+  flex: 1 1 calc(20% - 1rem);
   text-align: center;
 }
 
-.adventures h2 {
-  margin-bottom: 24px;
-  color: white;
-}
-.adventures-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
-  gap: 16px; /* Space between figures */
-}
-
-.adventures figure {
-  margin: 0; /* Remove default figure margin */
-  background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-.adventures figure:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-}
-.adventures img {
+.adventure-gallery img {
   width: 100%;
-  height: 150px; /* Fixed height for consistent layout */
-  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.adventures figcaption {
-  padding: 12px;
+.adventure-gallery figcaption {
+  margin-top: .5rem;
   font-weight: bold;
-  color: var(--accent1-color);
-  background-color: white;
+  color: #0a4d78;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.history-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.history-grid p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color-var(--acient1-color---);
 }
