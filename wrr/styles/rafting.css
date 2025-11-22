@@ -1,4 +1,4 @@
-/* rafting.css */
+/* styles/rafting.css */
 
 /* CSS Variables */
 :root {
@@ -131,7 +131,7 @@ footer {
   margin-top: 3rem;
 }
 
-footer .social img {
+footer .socialmedia img {
   width: 32px;
   margin: 0 .5rem;
 }
@@ -187,5 +187,5 @@ footer .social img {
 .history-grid p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color-var(--acient1-color---);
+  color: var(--accent1-color);
 }
