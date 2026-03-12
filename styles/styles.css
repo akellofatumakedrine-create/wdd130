@@ -1,44 +1,57 @@
-/* ...existing code... */
-
-main {
-    max-width: 800px;
-    /* limit width */
-    margin: 0 auto;
-    /* centre the main content */
+/* basic reset */
+p {
+    padding: 0;
 }
 
+/* navigation */
+nav {
+    background-color: #006699;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* sidebar */
 aside {
     width: 250px;
-    margin: 1em;
-    border: 1px solid #ccc;
-    padding: 1em;
-    background-color: #f9f9f9;
+    margin: 20px;
+    border: 1px solid #999;
+    padding: 10px;
+    background-color: #f4f4f4;
     color: #333;
 }
 
 aside img {
     width: 200px;
     height: auto;
-    /* preserve aspect ratio */
 }
 
-main img {
-    width: 150px;
-    /* override generic img rule for profile photo */
-    height: auto;
-    /* …any other profile‑specific styles… */
-}
-
-p {
-    padding: 0;
-    /* zero padding doesn’t need units */
-}
-
+/* footer */
 footer {
-    margin-top: 2em;
-    /* separate from main */
-    border-top: 1px solid #ccc;
+    margin-top: 30px;
+    border-top: 1px solid #999;
     text-align: center;
 }
-
-/* ...existing code... */
