@@ -1,49 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+< head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akello Fatuma Kedrine | WDD 130</title>
+    <title>Home | WWR Rafting</title>
     <meta name="description"
-      content="Welcome to personal homepage of Akello Fatuma Kedrine, a WDD 130 student from Gulu, Uganda.Explore her web development journey.">
-    <meta name="author" content="Akello Fatuma Kedrine">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+      content="Welcome to WWR Rafting. Experience the thrill of white water rafting with world-class guides and breathtaking rivers.">
+    <meta name="author" content="WWR Rafting Team">
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="wwr/about.html">about us</a>
-            <a href="wwr/">Rafting Website</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-        </nav>
-    </header>
+    <body>
 
-    <div class="grid"></div>
-    <main>
-        <h1>Akello Fatuma Kedrine | WDD 130</h1>
-        <!-- put a copy of your photo in images/ named profile.png, profile.jpg, or profile.webp -->
-        <img src="images/profile.jpg" alt="Photo of Akello Fatuma Kedrine" width="200">
-        <p>Hello! I’m Akello Fatuma Kedrine from Gulu, Uganda. I’m passionate about learning web
-            development and enjoy experimenting with HTML and CSS. In my free time I like reading,
-            travelling and volunteering with local youth groups. I’m excited to build a strong
-            foundation in WDD 130 and to create projects that reflect my interests.</p>
-    </main>
+        <!-- Header and Navigation -->
+        <header>
+            <!-- Placeholder Logo -->
+            <img src="https://picsum.photos/seed/raftlogo/200/60" alt="WWR Rafting Logo"
+              class="logo">
 
-    <aside>
-        <h2>Uganda</h2>
-        <img src="images/uganda-flag.jpg" alt="Ugandan flag">
-        <p>Uganda is a landlocked country in East Africa, known as the “Pearl of Africa.”
-            It has diverse landscapes, wildlife, and a rich cultural heritage.</p>
-    </aside>
+            <nav>
+                <a href="./index.html" style="color: var(--secondary-color);">Home</a>
+                <a href="trips.html">Trips</a> <!-- Link to trips page -->
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
+        <main>
+            <!-- Hero Section -->
+            <!-- Requirement: One large full-width hero image with heading positioned absolute -->
+            <section class="hero">
+                <img src="https://picsum.photos/seed/whitewater2/1200/600"
+                  alt="White water rafting action shot">
+                <h1>Experience the Rush</h1>
+            </section>
 
-    <footer>
-        <p>©2025 🌎 Akello Fatuma Kedrine 📍 Gulu, Uganda</p>
-    </footer>
-</body>
+            <!-- CSS Grid Layout Section -->
+            <!-- Requirement: Grid layout with at least two images and content about purpose/offerings -->
+            <section class="offerings-section">
+                <h2 class="section-title">Why Raft With Us?</h2>
+                <div class="offerings-grid">
+
+                    <!-- Grid Item 1 -->
+                    <article class="offering-card">
+                        <img src="https://picsum.photos/seed/river/600/400" alt="Scenic river view">
+                        <div class="offering-content">
+                            <h3>Pristine Rivers</h3>
+                            <p>We offer access to the most beautiful and unspoiled waterways in the
+                                region. Whether you
+                                seek calm waters or heart-pounding rapids, our diverse river
+                                locations provide the
+                                perfect backdrop for your next adventure.</p>
+                        </div>
+                    </article>
+
+                    <!-- Grid Item 2 -->
+                    <article class="offering-card">
+                        <img src="https://picsum.photos/seed/guide/600/400"
+                          alt="Professional rafting guide smiling">
+                        <div class="offering-content">
+                            <h3>Expert Guides</h3>
+                            <p>Safety is our top priority. Our certified guides bring years of
+                                experience and a passion
+                                for the outdoors. They are dedicated to ensuring you have a
+                                thrilling, safe, and
+                                memorable journey down the river.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Newsletter Sign Up Form -->
+            <!-- Requirement: Newsletter form requesting name and email -->
+            <section class="newsletter-section">
+                <div class="newsletter-text">
+                    <h3>Stay Afloat</h3>
+                    <p>Join our newsletter to receive updates on seasonal water levels, exclusive
+                        trip
+                        discounts, and rafting tips.</p>
+                </div>
+                <form class="newsletter-form" action="#" method="POST"
+                  onsubmit="event.preventDefault(); alert('Thank you for subscribing! (Demo)');">
+                    <div class="form-row">
+                        <input type="text" name="fullname" placeholder="Your Name" required
+                          aria-label="Full Name">
+                        <input type="email" name="email" placeholder="Your Email" required
+                          aria-label="Email Address">
+                    </div>
+                    <button type="submit" class="btn-submit">Sign Up</button>
+                </form>
+            </section>
+
+            <!-- Call to Action -->
+            <!-- Requirement: CTA with link to trips.html -->
+            <section class="cta-section">
+                <h2>Ready for the Adventure?</h2>
+                <p>Don't miss out on the trip of a lifetime. Spots fill up fast!</p>
+                <br>
+                <a href="trips.html" class="cta-button">View Our Trips</a>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 WWR Rafting. All rights reserved.</p>
+
+            <div class="socialmedia">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <!-- Using a generic icon placeholder for social media -->
+                    <img src="https://picsum.photos/seed/iconfb/32/32" alt="Facebook Icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="https://picsum.photos/seed/iconli/32/32" alt="LinkedIn Icon">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="https://picsum.photos/seed/iconig/32/32" alt="Instagram Icon">
+                </a>
+            </div>
+        </footer>
+
+    </body>
 
 </html>
